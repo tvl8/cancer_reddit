@@ -1,0 +1,349 @@
+---
+title: "EDA HINTS DATA"
+format:
+  html: 
+    embed-resources: true
+---
+
+```{r, message = FALSE, warning = FALSE}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(lubridate)
+library(gtsummary)
+library(reshape2)
+library(RColorBrewer)
+library(reshape2)
+library(ggplot2)
+library(caret)
+
+```
+
+The HINTS survey includes 527 questions. To focus on sentiment toward healthcare and cancer, we selected the questions in Table 1. Participants were asked various questions about where they access health information, do they trust the provided health information, and if they feel frustrated about the information. 
+
+**Table 1**
+
+| **Variable**                | **Description**                                                                                           |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------|
+| SeekCancerInfo              | Have you ever looked for information about cancer from any source?                                       |
+| CancerFrustrated            | Based on the results of your most recent search for information about cancer, how much do you agree or disagree: You felt frustrated during your search for the information. |
+| CancerTrustDoctor           | In general, how much would you trust information about cancer from a doctor?                             |
+| CancerTrustFamily           | In general, how much would you trust information about cancer from family or friends?                    |
+| CancerTrustGov              | In general, how much would you trust information about cancer from government health agencies?           |
+| CancerTrustCharities        | In general, how much would you trust information about cancer from charitable organizations?             |
+| CancerTrustReligiousOrgs    | In general, how much would you trust information about cancer from religious organizations and leaders?   |
+| CancerTrustScientists       | In general, how much would you trust information about cancer from scientists?                           |
+| Electronic2_HealthInfo      | In the past 12 months have you used the Internet to look for health or medical information?              |
+| MisleadingHealthInfo        | How much of the health information that you see on social media do you think is false or misleading?     |
+| TrustHCSystem               | How much do you trust the health care system (for example, hospitals, pharmacies, and other organizations involved in health care)? |
+
+
+![Spearman Correlation Matrix](plot-images/spearman-correlation-matrix-reordered.png)
+
+The correlations from the Spearman Matrix show that there might be some linkage between trust - 'CancerTrustDoctor' 'CancerTrustGov' 'CancerTrustCharities' 'CancerTrustScientists' and 'CancerTrustReligiousOrgs' all had the highest correlations. This seems to show that trust in one entity might be an element of disposition - that individuals who trust in one area are likely to feel similarly about another. 
+
+Code for the Spearman Correlation Matrix can be found in the code/hints_regression.ipynb file. 
+
+```{r}
+
+load('../data/HINTS6_R_20240524/hints6_public.rda')
+hints <- as.data.frame(public)
+
+#print(colnames(hints))
+
+columns <- c("HHID", "updatedate", "SeekCancerInfo", "CancerFrustrated", "CancerTrustDoctor", "CancerTrustFamily", "CancerTrustGov", "CancerTrustCharities", "CancerTrustReligiousOrgs", "CancerTrustScientists", "Electronic2_HealthInfo", "MisleadingHealthInfo", "TrustHCSystem")
+
+hints_select <- hints %>% select(all_of(columns))
+#hints_select$updatedate <- hints_select$updatedate / 1000
+#hints_select$updatedate <- as_datetime(hints_select$updatedate)
+
+head(hints_select)
+
+```
+
+# Survey Responses
+
+In the bar graphs, a first look at the data provides an general overview of the responses to the questions. These plots show how much participants agree or disagree to each question. For example, many participants trust scientists, but trend to trusting religious organizations less. 
+
+```{r}
+
+plot_data <- hints_select %>%
+  select(-HHID, -updatedate) %>%  # Exclude the first two columns
+  pivot_longer(everything(), names_to = "Variable", values_to = "Value") %>%
+  count(Variable, Value)
+
+print(unique(plot_data$Value))
+
+values <- c("Strongly agree", "Somewhat agree", "Somewhat disagree", "Strongly disagree", "A lot", "Some", 
+            "A little", "Not at all", "Yes", "No", "None", "I do not use social media", "Very", "Somewhat")
+
+plot_data_filtered <- plot_data %>% filter(Value %in% values) 
+plot_data_filtered$Value <- factor(plot_data_filtered$Value, levels = sort(unique(plot_data_filtered$Value)))
+
+columns_1 <- c("SeekCancerInfo", "CancerFrustrated", "CancerTrustDoctor", "CancerTrustFamily")
+plot_data_filtered_1 <- plot_data_filtered %>% filter(Variable %in% columns_1)
+columns_2 <- c("CancerTrustGov", "CancerTrustCharities", "CancerTrustReligiousOrgs", "CancerTrustScientists")
+plot_data_filtered_2 <- plot_data_filtered %>% filter(Variable %in% columns_2)
+columns_3 <- c("Electronic2_HealthInfo", "MisleadingHealthInfo", "TrustHCSystem")
+plot_data_filtered_3 <- plot_data_filtered %>% filter(Variable %in% columns_3) 
+
+
+
+# Create a custom color scale
+custom_colors <- c(
+  "SeekCancerInfo" = "#ff4500", 
+  "CancerFrustrated" = "#5f0922", 
+  "CancerTrustDoctor" = "#ffa205", 
+  "CancerTrustFamily" = "#08030a"
+)
+
+p <- ggplot(plot_data_filtered_1, aes(x = Value, y = n, fill = Variable)) +
+  geom_bar(stat = "identity") + 
+  scale_fill_manual(values = custom_colors) +
+  facet_wrap(~ Variable, scales = "free_x") +  # Separate plots for each column
+  theme_minimal() +
+  labs(
+    title = "HINTS Survey Responses",
+    x = "Responses",
+    y = "Count",
+    fill = "Question"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), 
+        panel.background = element_rect(fill = "#feeece", color = "#feeece"), 
+        plot.background = element_rect(fill = "#feeece", color = "#feeece")) 
+
+
+
+png("../data/HINTS6_R_20240524/HINTS_plot1.png", width = 800, height = 600)
+print(p)  
+dev.off()
+```
+
+```{r}
+# Create a custom color scale
+custom_colors <- c(
+  "CancerTrustGov" = "#ff4500", 
+  "CancerTrustCharities" = "#5f0922", 
+  "CancerTrustReligiousOrgs" = "#ffa205", 
+  "CancerTrustScientists" = "#08030a"
+)
+
+p <- ggplot(plot_data_filtered_2, aes(x = Value, y = n, fill = Variable)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = custom_colors) +
+  facet_wrap(~ Variable, scales = "free_x") +  
+  theme_minimal() +
+  labs(
+    title = "HINTS Survey Responses",
+    x = "Responses",
+    y = "Count",
+    fill = "Question"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),panel.background = element_rect(fill = "#feeece", color = "#feeece"), 
+  plot.background = element_rect(fill = "#feeece", color = "#feeece")) 
+
+p
+
+png("../data/HINTS6_R_20240524/HINTS_plot2.png", width = 800, height = 600)
+print(p)  
+dev.off()
+```
+
+```{r}
+# Create a custom color scale
+custom_colors <- c(
+  "Electronic2_HealthInfo" = "#ff4500", 
+  "MisleadingHealthInfo" = "#5f0922", 
+  "TrustHCSystem" = "#ffa205"
+)
+p <- ggplot(plot_data_filtered_3, aes(x = Value, y = n, fill = Variable)) +
+  geom_bar(stat = "identity") + 
+  scale_fill_manual(values = custom_colors) +
+  facet_wrap(~ Variable, scales = "free_x", nrow=2) +
+  theme_minimal() +
+  labs(
+    title = "HINTS Survey Responses",
+    x = "Responses",
+    y = "Count",
+    fill = "Question"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),panel.background = element_rect(fill = "#feeece", color = "#feeece"), 
+  plot.background = element_rect(fill = "#feeece", color = "#feeece")) 
+
+p
+
+png("../data/HINTS6_R_20240524/HINTS_plot3.png", width = 800, height = 600)
+print(p) 
+dev.off()
+```
+
+# Summary Statistics of the Responses
+
+The responses of the questions can be coded into a scale from 0:3. For example, "Not at all" is coded as 0, "A little" is coded as 1, "Some" is coded as 2, and "A lot" is coded as 3. After coding these responses, the mean, median, and mode is calculated to highlight overall trends in the data.  
+
+```{r}
+print(unique(hints_select$MisleadingHealthInfo))
+```
+
+```{r}
+print(colnames(hints_select))
+
+hints_select_coded <- hints_select %>%
+  mutate(CancerFrustrated = as.numeric(case_when(
+    CancerFrustrated == "Strongly disagree" ~ "0",
+    CancerFrustrated == "Somewhat disagree" ~ "1",
+    CancerFrustrated == "Somewhat agree" ~ "2",
+    CancerFrustrated == "Strongly agree" ~ "3",
+    TRUE ~ 	NA 
+  )))
+
+hints_select_coded <- hints_select_coded %>%
+  mutate(CancerTrustDoctor = as.numeric(case_when(
+    CancerTrustDoctor == "Not at all" ~ "0",
+    CancerTrustDoctor == "A little" ~ "1",
+    CancerTrustDoctor == "Some" ~ "2",
+    CancerTrustDoctor == "A lot" ~ "3",
+    TRUE ~ 	NA 
+  )))
+
+hints_select_coded <- hints_select_coded %>%
+  mutate(CancerTrustFamily = as.numeric(case_when(
+    CancerTrustFamily == "None" ~ "0",
+    CancerTrustFamily == "A little" ~ "1",
+    CancerTrustFamily == "Some" ~ "2",
+    CancerTrustFamily == "A lot" ~ "3",
+    TRUE ~ NA 
+  )))
+
+hints_select_coded <- hints_select_coded %>%
+  mutate(SeekCancerInfo = as.numeric(case_when(
+    SeekCancerInfo == "Yes" ~ "1",
+    SeekCancerInfo == "No" ~ "0",
+    TRUE ~ NA 
+  )))
+
+hints_select_coded <- hints_select_coded %>%
+  mutate(CancerTrustCharities = as.numeric(case_when(
+    CancerTrustCharities == "Not at all" ~ "0",
+    CancerTrustCharities == "A little" ~ "1",
+    CancerTrustCharities == "Some" ~ "2",
+    CancerTrustCharities == "A lot" ~ "3",
+    TRUE ~ NA 
+  )))
+
+hints_select_coded <- hints_select_coded %>%
+  mutate(CancerTrustGov = as.numeric(case_when(
+    CancerTrustGov == "Not at all" ~ "0",
+    CancerTrustGov == "A little" ~ "1",
+    CancerTrustGov == "Some" ~ "2",
+    CancerTrustGov == "A lot" ~ "3",
+    TRUE ~ NA
+  )))
+
+hints_select_coded <- hints_select_coded %>%
+  mutate(CancerTrustReligiousOrgs = as.numeric(case_when(
+    CancerTrustReligiousOrgs == "Not at all" ~ "0",
+    CancerTrustReligiousOrgs == "A little" ~ "1",
+    CancerTrustReligiousOrgs == "Some" ~ "2",
+    CancerTrustReligiousOrgs == "A lot" ~ "3",
+    TRUE ~ NA 
+  )))
+
+hints_select_coded <- hints_select_coded %>%
+  mutate(CancerTrustScientists = as.numeric(case_when(
+    CancerTrustScientists == "Not at all" ~ "0",
+    CancerTrustScientists == "A little" ~ "1",
+    CancerTrustScientists == "Some" ~ "2",
+    CancerTrustScientists == "A lot" ~ "3",
+    TRUE ~ NA 
+  )))
+
+hints_select_coded <- hints_select_coded %>%
+  mutate(Electronic2_HealthInfo = as.numeric(case_when(
+    Electronic2_HealthInfo == "Yes" ~ "1",
+    Electronic2_HealthInfo == "No" ~ "0",
+    TRUE ~ NA 
+  )))
+
+hints_select_coded <- hints_select_coded %>%
+  mutate(MisleadingHealthInfo = as.numeric(case_when(
+    MisleadingHealthInfo == "None" ~ "0",
+    MisleadingHealthInfo == "I do not use social media" ~ "0",
+    MisleadingHealthInfo == "A little" ~ "1",
+    MisleadingHealthInfo == "Some" ~ "2",
+    MisleadingHealthInfo == "A lot" ~ "3",
+    TRUE ~ NA 
+  )))
+
+hints_select_coded <- hints_select_coded %>%
+  mutate(TrustHCSystem = as.numeric(case_when(
+    TrustHCSystem == "Not at all" ~ "0",
+    TrustHCSystem == "A little" ~ "1",
+    TrustHCSystem == "Somewhat" ~ "2",
+    TrustHCSystem == "Very" ~ "3",
+    TRUE ~ NA 
+  )))
+
+
+print(head(hints_select_coded))
+```
+
+In the summary table below, the mean for trusting a doctor is higher than trusting the government. Given this information, we will also look at the Reddit dataset to see the level of trust users have when they mention the government in their comments versus doctors. In addition, the people who felt frustrated about the information they received about cancer is approximately 1.105. In the Reddit dataset, we also look for an equivalent using textual data by looking at positive/negative and emotion sentiment analysis on comments that include the word "cancer".  
+
+```{r}
+
+print(summary(hints_select_coded))
+
+
+```
+
+```{r}
+
+hints_select_coded_clean <- drop_na(hints_select_coded)
+
+table1 <- hints_select_coded_clean %>%
+  select(-HHID, -updatedate) %>%
+  tbl_summary(
+    statistic = all_continuous() ~ "{mean} ± {sd}",  
+  )
+
+table1
+
+```
+
+
+The box plot provides a visualization of the median, mode, and outliers in the dataset.  
+
+```{r}
+
+
+boxplot_data <- hints_select_coded %>%
+  select(-HHID, -updatedate)
+
+
+boxplot_data_long <- boxplot_data %>%
+  pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value")
+
+
+ggplot(boxplot_data_long, aes(x = Variable, y = Value)) +
+  geom_boxplot(outlier.colour = "red", outlier.size = 1, fill ="#ffa205" ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),panel.background = element_rect(fill = "#feeece", color = "#feeece"), 
+  plot.background = element_rect(fill = "#feeece", color = "#feeece")) +  
+  labs(
+    title = "HINTS Boxplot",
+    x = "Variables",
+    y = "Values", 
+  ) + coord_cartesian(ylim = c(-1, 4)) 
+
+```
+
+# Further Directions and Conclusion
+
+The HINTS dataset provides insight into the perceptions of healthcare and cancer information. The trends in this dataset will be repeated in the Reddit dataset. Using the Reddit dataset, we will explore sentiments, such as positive/negative, frustrations, and trust. We will also look at word frequency count to review, which topics Reddit users commonly comment about.  
+
+
+
+
+
+

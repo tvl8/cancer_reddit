@@ -1,0 +1,100 @@
+---
+title: "Machine Learning - Reddit Data"
+format:
+  html: 
+    embed-resources: true
+---
+
+# Question : Can we predict if a comment will be cancer related
+
+The goal is to classify Reddit comments into two categories: **Cancer-related** and **Non-Cancer subreddits**, to understand if we can predict if a comment is cancer related or no, based on the added source column to label as cancer and non-cancer. The dataset, sourced from the PushShift Reddit dataset, includes subreddit comments from two periods (2021–2023 and 2023–2024). 
+
+## Methodology 
+
+The dataset preparation and preprocessing were crucial to ensuring the models had the appropriate features for learning. The raw data from the PushShift Reddit Dataset included text data and category labels for cancer-related and non-cancer comments. 
+
+First, the data was combined into a single DataFrame, with an additional column named source labeling the comments as "Cancer" or "Non-Cancer." The comments were then preprocessed to ensure they were in a suitable format for the models.
+
+Text tokenization was applied to split the comments into individual words, enabling feature extraction. `Tokenization` was followed by the removal of stop words, such as "and," "the," and "is," which are frequent but do not carry significant information for classification. The tokenized words were then converted into numerical vectors using `CountVectorizer`, which captures word frequencies. To enhance the importance of rare but meaningful words, `TF-IDF` (Term Frequency-Inverse Document Frequency) scores were computed. This step ensured that commonly occurring but uninformative words received less weight, while rare and distinctive words were emphasized. 
+
+Finally, the labels ("Cancer" and "Non-Cancer") were encoded numerically as 0 and 1, respectively, using `StringIndexer`. These preprocessing steps were implemented as a PySpark pipeline to ensure consistency and scalability.
+
+The processed dataset was then split into 80% training and 20% testing subsets. Two machine learning models, **Naive Bayes** and **Logistic Regression**, were trained on the training data using PySpark's built-in implementations. The evaluation metrics, such as accuracy, precision, recall, F1-score, and AUC-ROC, were computed on the test set. Additionally, confusion matrices were generated to visualize the distribution of correct and incorrect predictions for both models.
+
+Logistic Regression and Naive Bayes were chosen for their simplicity, efficiency, and effectiveness in text classification. Naive Bayes handles high-dimensional data well with its independence assumption, while Logistic Regression provides robust, interpretable probability predictions. These models serve as strong benchmarks for binary classification tasks.
+
+-----
+
+## Naive Bayes 
+
+### Rationale 
+
+Naive Bayes is a probabilistic model based on Bayes' theorem, with the assumption that features are conditionally independent given the label. This model is particularly suitable for text classification tasks, as it performs well when features (words) contribute independently to the prediction. 
+
+In this task, Naive Bayes classified comments as cancer-related or non-cancer based on word frequencies and their association with the labels. By assuming independence between words, the model simplifies the computation, making it highly efficient.
+
+### Model Performance
+
+The model performance, though wasn't that great, still created a strong baseline for further modeling analysis.
+
+Table 1 : Performance Metrics for Naive Bayes
+
+| **Metric**       | **Value** |
+|-------------------|-----------|
+| Test Precision    | 0.777     |
+| Test Recall       | 0.775     |
+| Test F1-Score     | 0.775     |
+| Test AUC-ROC      | 0.776     |
+
+
+The Naive Bayes model achieved an accuracy of 77.5%, indicating that it correctly classified over three-fourths of the test data. Its precision and recall were similarly high, both at approximately 77.5%, reflecting a good balance between identifying cancer-related comments (true positives) and minimizing false positives (non-cancer comments wrongly classified as cancer). The F1-score, a harmonic mean of precision and recall, was also 77.5%, confirming the model's consistent performance. The AUC-ROC score of 77.6% highlights the model's ability to distinguish between the two classes effectively.
+
+![Naive Bayes Classification Confusion Matrix](plot-images/naive_bayes_cm.png)
+
+The confusion matrix provided deeper insights into the model's strengths and weaknesses. Of the cancer-related comments, 1564 were correctly classified, while 391 were misclassified as non-cancer. Conversely, 1517 non-cancer comments were correctly classified, but 501 were incorrectly predicted as cancer. 
+
+These false positives suggest that the model occasionally overpredicts the "Cancer" class, possibly due to words or phrases common in both categories.  Nevertheless, the relatively low number of false negatives (391) demonstrates that the model is effective at capturing cancer-related content, aligning well with the task's objective.
+
+Hence, Naive Bayes's bias toward predicting the "Cancer" class (higher false positives) can be acceptable in scenarios where prioritizing cancer-related content is more important than avoiding false positives.
+
+----
+
+## Logistic Regression
+
+### Rationale
+
+Logistic Regression is a linear model that predicts the probability of an instance belonging to a particular class by fitting a logistic function (sigmoid curve) to the data. Unlike Naive Bayes, Logistic Regression does not assume independence among features. Instead, it learns the weights of features (words) directly from the data, making it more flexible but also more prone to overfitting in high-dimensional spaces without proper regularization.
+
+### Model Performance 
+
+Though Logistic Regression underperformed in comparison to Naive Bayes, it was still interesting to look into it's performance, based on the table below 
+
+| **Metric**       | **Value** |
+|-------------------|-----------|
+| Test Precision    | 0.707     |
+| Test Recall       | 0.707     |
+| Test F1-Score     | 0.707     |
+| Test AUC-ROC      | 0.707     |
+
+
+For this question, Logistic Regression performed moderately well, achieving an accuracy of 70.7%. Its precision, recall, and F1-score were all consistent at 70.7%, reflecting a balanced performance but slightly lower than that of Naive Bayes. The AUC-ROC score was also 70.7%, indicating that the model struggled more than Naive Bayes in distinguishing cancer-related from non-cancer comments.
+
+![Naive Bayes Classification Confusion Matrix](plot-images/logistic_regression_cm.png)
+
+The confusion matrix highlighted specific challenges faced by Logistic Regression. While it correctly identified 1374 cancer-related comments, it misclassified 581 as non-cancer, a relatively high number of false negatives. Similarly, 1434 non-cancer comments were correctly classified, but 584 were predicted as cancer, resulting in a comparable number of false positives. These results suggest that the model had difficulty capturing the subtle nuances in the text that differentiate the two categories.
+
+The lower recall for cancer-related comments (more false negatives) is a significant limitation of Logistic Regression in this context. Missing cancer-related comments is more critical than overclassifying non-cancer content as cancer. 
+
+This limitation makes Logistic Regression less suitable for the given task, where the focus is on identifying cancer-related content with high confidence. Logistic Regression's moderate performance can be attributed to its reliance on linear decision boundaries, which may not fully capture the complexities of the text data. While it is a robust and interpretable model, its linear nature and sensitivity to high-dimensional data might have limited its effectiveness in this problem.
+
+---- 
+
+# Conclusion 
+
+The results demonstrate that Naive Bayes outperforms Logistic Regression in classifying Reddit comments into cancer-related and non-cancer categories with higher accuracy, precision, and recall, making it better suited for identifying cancer-related content. Its probabilistic approach and independence assumption handle text data effectively. 
+
+Logistic Regression, though flexible, had higher false negatives, making it less suitable for this task. Overall, Naive Bayes is the preferred choice for its simplicity, efficiency, and superior performance.
+
+## Reflection 
+
+Understanding whether a comment is cancer-related is crucial for enhancing online support systems and health communication. Cancer-related subreddits often serve as platforms for individuals seeking emotional support, sharing personal experiences, or discussing treatment options. Automatically identifying such comments can help moderators curate relevant content, ensure timely responses to critical queries, and provide researchers with valuable insights into public sentiment, challenges, and trends related to cancer. This understanding is particularly important for designing interventions, improving healthcare accessibility, and fostering a supportive community for those affected by cancer.

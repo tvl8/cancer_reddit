@@ -1,0 +1,324 @@
+HHID,SeekCancerInfo,CancerFrustrated,CancerTrustDoctor,CancerTrustFamily,CancerTrustGov,CancerTrustCharities,CancerTrustReligiousOrgs,CancerTrustScientists,Electronic2_HealthInfo,MisleadingHealthInfo,TrustHCSystem
+21000330,Yes,Somewhat disagree,Some,Not at all,Some,Some,Not at all,A lot,Yes,A lot,A little
+21000976,Yes,Somewhat agree,A lot,Some,Some,Some,Some,A lot,Yes,Some,A little
+21001112,Yes,Somewhat disagree,A little,A little,Not at all,Not at all,Not at all,A little,No,A lot,Not at all
+21001283,Yes,Somewhat disagree,A lot,Some,Not at all,A little,Some,Not at all,No,I do not use social media,Not at all
+21001548,Yes,Strongly agree,A lot,Some,Not at all,Some,A lot,A little,Yes,Some,A little
+21001621,Yes,Somewhat disagree,Some,A little,Not at all,Some,A little,A little,Yes,Some,A little
+21002044,Yes,Somewhat disagree,A lot,Some,A little,A little,Not at all,Some,Yes,A lot,A little
+21002212,Yes,Somewhat disagree,A lot,Some,A lot,Some,Not at all,A lot,Yes,Some,Not at all
+21002275,Yes,Strongly disagree,Some,A little,Not at all,A little,A little,Some,No,A lot,Not at all
+21002518,Yes,Strongly agree,A lot,Some,Some,A little,A little,Some,Yes,A lot,A little
+21003135,Yes,Somewhat agree,Some,A little,Some,Some,Not at all,A lot,Yes,I do not use social media,A little
+21003309,Yes,Somewhat disagree,Some,Some,Some,Not at all,Not at all,Some,Yes,Some,Not at all
+21003334,Yes,Somewhat agree,A lot,Not at all,A lot,Some,Some,A little,No,A little,A little
+21003444,Yes,Somewhat agree,Some,A little,A little,A little,A little,Some,Yes,A lot,A little
+21003528,Yes,Somewhat disagree,Not at all,Not at all,Not at all,Not at all,Not at all,Not at all,Yes,A lot,A little
+21003806,Yes,Strongly agree,A lot,Some,A little,A little,Not at all,A lot,Yes,Some,A little
+21003873,Yes,Strongly disagree,A lot,A little,Not at all,A lot,A little,Not at all,Yes,A lot,Not at all
+21004176,Yes,Strongly disagree,A lot,Some,A lot,A little,Not at all,A lot,Yes,I do not use social media,A little
+21004298,Yes,Somewhat agree,Some,A little,Some,Some,Not at all,A lot,Yes,A lot,A little
+21004347,Yes,Somewhat disagree,Some,Some,A little,Some,Some,Some,Yes,A little,Not at all
+21004410,Yes,Strongly agree,Some,A little,A little,A little,Not at all,Some,Yes,A lot,A little
+21004818,Yes,Somewhat agree,A little,A little,Not at all,A little,Not at all,A little,Yes,A lot,Not at all
+21004967,Yes,Strongly agree,Some,A little,Not at all,Not at all,Not at all,A little,No,A lot,A little
+21005736,Yes,Strongly disagree,Some,Some,Some,Some,Not at all,Some,Yes,Some,A little
+21005979,Yes,Strongly agree,A lot,A little,Not at all,Not at all,A little,Some,Yes,A lot,A little
+21006094,Yes,Strongly disagree,A lot,Some,Not at all,Not at all,A little,A lot,No,Some,A little
+21006107,Yes,Somewhat agree,A lot,Some,A little,A little,A little,Some,Yes,Some,A little
+21006123,Yes,Strongly disagree,A lot,Some,Some,A little,Not at all,A lot,Yes,A lot,Not at all
+21006198,Yes,Strongly agree,A little,Not at all,Some,Some,Not at all,A lot,Yes,A lot,A little
+21006253,Yes,Strongly agree,A lot,Some,Not at all,Not at all,Not at all,Not at all,No,A lot,Not at all
+21006332,Yes,Somewhat disagree,A lot,Some,Not at all,Some,Some,A lot,Yes,A lot,A little
+21006362,Yes,Somewhat disagree,A little,A little,Not at all,Not at all,Not at all,Not at all,Yes,A lot,A little
+21006616,Yes,Somewhat disagree,A lot,Some,Some,A little,Not at all,A lot,Yes,Some,A little
+21006853,Yes,Somewhat agree,Some,Not at all,Some,A little,Not at all,Some,Yes,I do not use social media,A little
+21006930,Yes,Somewhat disagree,A lot,Some,Some,Some,Not at all,A lot,Yes,Some,A little
+21006979,Yes,Somewhat disagree,A lot,Not at all,Not at all,Not at all,Not at all,A lot,Yes,A lot,A little
+21007173,Yes,Somewhat agree,Some,Some,Some,Some,Some,A little,Yes,Some,A little
+21007483,Yes,Strongly disagree,A lot,A little,A little,A little,Not at all,A lot,Yes,A lot,A little
+21007589,Yes,Somewhat disagree,Some,A little,A little,Not at all,Some,A little,Yes,A little,A little
+21007926,Yes,Strongly disagree,Some,A little,A lot,A lot,A little,A lot,Yes,A lot,A little
+21008084,Yes,Somewhat disagree,A lot,A little,A lot,A lot,Some,A lot,No,A little,A little
+21008331,Yes,Somewhat disagree,A lot,A lot,A lot,Some,Not at all,A lot,Yes,A little,A little
+21008568,Yes,Somewhat disagree,A lot,A little,Some,A little,Not at all,A lot,Yes,Some,A little
+21008678,Yes,Strongly agree,Some,A little,A lot,Not at all,Not at all,A lot,Yes,Some,A little
+21008754,Yes,Strongly agree,A lot,Some,Some,Some,A lot,A little,Yes,Some,A little
+21008774,Yes,Strongly agree,A lot,Not at all,A little,Not at all,Not at all,A lot,Yes,A lot,Not at all
+21008882,Yes,Strongly agree,A little,A little,Some,A little,A little,A lot,Yes,A lot,A little
+21009014,Yes,Strongly disagree,A lot,A little,Some,Some,Not at all,A lot,Yes,A lot,A little
+21009050,Yes,Somewhat agree,A lot,Not at all,A lot,A little,A little,A lot,Yes,A lot,A little
+21009199,Yes,Strongly agree,A lot,A little,A little,Not at all,Not at all,A lot,Yes,Some,A little
+21009285,Yes,Somewhat disagree,A lot,A lot,A little,A little,A little,A lot,Yes,A lot,A little
+21009647,Yes,Somewhat agree,A little,Some,Some,Some,Some,Some,Yes,Some,A little
+21009758,Yes,Strongly agree,Some,Some,Not at all,A little,A little,Some,Yes,A lot,A little
+21009969,Yes,Somewhat disagree,Some,A little,A little,Not at all,A little,Not at all,Yes,A lot,Not at all
+21010273,Yes,Somewhat agree,A lot,A little,Some,Not at all,Not at all,A lot,Yes,A lot,A little
+21010649,Yes,Somewhat disagree,Some,Some,Some,Some,Some,Some,Yes,Some,A little
+21010887,Yes,Strongly agree,Some,Not at all,A little,Not at all,Not at all,Some,Yes,A lot,A little
+21010994,Yes,Somewhat agree,A little,A little,Not at all,A little,A little,A little,No,A lot,A little
+21011209,Yes,Somewhat disagree,A lot,Some,Some,Some,Not at all,A lot,Yes,A little,A little
+21011250,Yes,Somewhat agree,Some,Not at all,Not at all,A little,A little,Some,Yes,A lot,Not at all
+21011262,Yes,Strongly agree,Some,A little,Not at all,Not at all,Not at all,A little,Yes,A lot,A little
+21011500,Yes,Somewhat agree,A lot,Some,A lot,A little,Not at all,A lot,Yes,A lot,A little
+21011683,Yes,Somewhat agree,Some,A little,Not at all,A little,Some,A little,No,A lot,Not at all
+21011926,Yes,Strongly disagree,Some,Some,Not at all,A little,Not at all,Some,Yes,A lot,A little
+21012018,Yes,Somewhat agree,A lot,A little,A lot,A lot,Not at all,A lot,Yes,Some,A little
+21012131,Yes,Somewhat agree,Some,A little,Some,Not at all,Not at all,A lot,Yes,A little,A little
+21012213,Yes,Somewhat disagree,Some,Some,Some,A little,Not at all,A lot,Yes,Some,A little
+21012449,Yes,Strongly disagree,Some,Not at all,Not at all,Some,Not at all,Some,Yes,Some,A little
+21012648,Yes,Strongly disagree,Some,Not at all,Not at all,A little,Not at all,Some,Yes,A little,A little
+21012798,Yes,Somewhat agree,A lot,A little,Some,Some,A little,A lot,Yes,Some,A little
+21012916,Yes,Somewhat agree,A little,Some,Not at all,Some,Not at all,A little,Yes,A little,Not at all
+21013389,Yes,Somewhat agree,Some,Not at all,Some,Some,Some,Some,Yes,Some,A little
+21013475,Yes,Somewhat disagree,Some,Not at all,Some,Not at all,Not at all,Not at all,Yes,Some,A little
+21013647,Yes,Somewhat agree,A lot,Some,Some,A little,Not at all,A lot,No,I do not use social media,A little
+21013786,Yes,Somewhat disagree,A little,Some,Not at all,A little,Some,Not at all,Yes,A lot,A little
+21013865,Yes,Somewhat disagree,Some,A little,A lot,Some,Not at all,A lot,Yes,A lot,A little
+21013886,Yes,Strongly agree,A lot,A little,A little,A little,A little,A little,Yes,A lot,A little
+21014044,Yes,Somewhat disagree,A lot,A little,A lot,Some,Not at all,A lot,Yes,A lot,A little
+21014089,Yes,Somewhat agree,A lot,Some,Not at all,A little,A little,Some,Yes,Some,A little
+21014420,Yes,Somewhat disagree,A lot,Some,A lot,A little,Not at all,A lot,Yes,Some,A little
+21014622,Yes,Somewhat disagree,A lot,A little,A little,A little,A little,A lot,Yes,A lot,A little
+21014706,Yes,Strongly disagree,Some,A little,Some,Some,A little,A lot,Yes,Some,A little
+21014744,Yes,Somewhat disagree,A lot,Some,A lot,A lot,Some,A lot,No,Some,A little
+21014975,Yes,Somewhat agree,Some,Some,A little,A little,A little,A lot,Yes,Some,A little
+21015013,Yes,Somewhat disagree,A little,A little,Not at all,Not at all,A little,Not at all,Yes,A lot,Not at all
+21015263,Yes,Somewhat disagree,A lot,Some,A lot,A lot,Some,A lot,Yes,Some,A little
+21015264,Yes,Strongly agree,A little,A lot,Some,A lot,A lot,A lot,Yes,Some,A little
+21015360,Yes,Strongly disagree,A lot,A little,A little,A little,A little,A lot,Yes,Some,A little
+21015472,Yes,Strongly agree,A lot,A lot,Not at all,Some,A lot,Not at all,Yes,A lot,A little
+21015527,Yes,Strongly agree,Not at all,Some,Some,Some,Some,Some,Yes,A lot,A little
+21015529,Yes,Somewhat disagree,Some,A little,A little,A little,A little,Some,Yes,A little,A little
+21015598,Yes,Strongly disagree,Some,A little,Some,A little,Not at all,A lot,Yes,I do not use social media,Not at all
+21015890,Yes,Somewhat disagree,A lot,Some,A little,Some,Not at all,A lot,Yes,A lot,A little
+21015979,Yes,Somewhat agree,A lot,Some,Some,A little,Not at all,A lot,Yes,A lot,A little
+21016256,Yes,Strongly disagree,A lot,A little,Some,Some,Some,Some,Yes,Some,Not at all
+21016347,Yes,Somewhat disagree,A lot,Some,Some,Some,Some,A little,Yes,A little,A little
+21016448,Yes,Somewhat disagree,Some,A little,A little,A little,A little,A little,Yes,Some,A little
+21016483,Yes,Strongly agree,A little,Some,A little,Not at all,Some,A little,Yes,Some,A little
+21016516,Yes,Somewhat agree,Some,A little,A little,A little,A little,A little,Yes,A lot,A little
+21016530,Yes,Strongly disagree,Some,A little,Some,Some,Not at all,A little,Yes,A lot,A little
+21016728,Yes,Somewhat agree,A lot,Some,Some,Some,Not at all,A lot,Yes,A lot,A little
+21016844,Yes,Strongly agree,A little,A lot,Not at all,Not at all,Not at all,Not at all,Yes,A lot,Not at all
+21016967,Yes,Somewhat disagree,Some,Some,Some,A little,Not at all,A lot,Yes,A lot,Not at all
+21017137,Yes,Strongly disagree,A lot,Some,A lot,A little,A little,A lot,Yes,Some,A little
+21017199,Yes,Strongly disagree,Some,Some,Some,Some,Some,Some,Yes,A lot,A little
+21017244,Yes,Strongly disagree,A little,Some,Not at all,A little,Not at all,A lot,Yes,A lot,Not at all
+21017454,Yes,Somewhat agree,Some,A little,A little,A little,A little,A little,Yes,I do not use social media,Not at all
+21017455,Yes,Strongly disagree,A lot,A little,Some,Not at all,Not at all,A lot,Yes,A lot,A little
+21017610,Yes,Somewhat disagree,Some,Some,Not at all,Not at all,Not at all,A little,Yes,A lot,Not at all
+21017843,Yes,Strongly disagree,A lot,Some,Some,A lot,A little,A lot,Yes,Some,A little
+21018014,Yes,Somewhat disagree,Some,A little,Not at all,A little,A little,A little,Yes,A lot,Not at all
+21018094,Yes,Somewhat disagree,A lot,A little,A lot,Some,A little,A lot,No,Some,A little
+21018121,Yes,Strongly disagree,A lot,Some,A lot,A little,Not at all,A lot,Yes,Some,A little
+21018429,Yes,Somewhat disagree,Some,A little,Not at all,Not at all,Not at all,Some,Yes,A little,A little
+21018492,Yes,Somewhat agree,A lot,Some,A lot,Some,Some,A lot,Yes,Some,A little
+21018613,Yes,Somewhat agree,A little,A lot,Not at all,Not at all,Not at all,Some,Yes,A lot,Not at all
+21018699,Yes,Strongly disagree,A lot,Some,A lot,Not at all,Not at all,A lot,Yes,A little,A little
+21018925,Yes,Somewhat agree,Some,Some,Some,Some,Not at all,Some,Yes,A lot,Not at all
+21018929,Yes,Somewhat agree,Some,Some,A little,A little,A little,Some,Yes,A lot,A little
+21018969,Yes,Somewhat agree,Some,Some,Some,Some,Some,Some,Yes,I do not use social media,A little
+21019129,Yes,Somewhat disagree,A lot,Some,Not at all,Not at all,Some,A little,Yes,A lot,Not at all
+21019361,Yes,Somewhat disagree,A little,Some,Not at all,Not at all,Not at all,A lot,Yes,A lot,Not at all
+21019410,Yes,Somewhat disagree,A lot,Not at all,Not at all,Not at all,Not at all,Not at all,No,A lot,Not at all
+21019598,Yes,Somewhat agree,A lot,Some,Some,Some,Not at all,A lot,Yes,A lot,A little
+21019729,Yes,Strongly agree,A lot,Some,Some,A little,Not at all,A lot,Yes,A lot,A little
+21019946,Yes,Strongly agree,A little,A little,A little,Not at all,Not at all,Some,Yes,A lot,A little
+21020176,Yes,Somewhat agree,Some,A little,Some,Some,A little,Some,Yes,Some,A little
+21020242,Yes,Somewhat disagree,A lot,A lot,Some,A little,Not at all,A lot,Yes,Some,A little
+21020278,Yes,Strongly agree,Some,Some,A little,A little,Not at all,A lot,Yes,A lot,A little
+21020799,Yes,Somewhat agree,A little,A little,A little,A little,A little,A little,Yes,A lot,A little
+21020868,Yes,Somewhat agree,A lot,A little,A little,A little,Not at all,A little,Yes,A lot,A little
+21021004,Yes,Strongly disagree,A little,A lot,Not at all,Not at all,Not at all,Some,Yes,A lot,Not at all
+21021078,Yes,Strongly disagree,Some,A little,Not at all,A little,Not at all,Some,Yes,A lot,A little
+21021192,Yes,Somewhat disagree,A lot,Some,A little,Some,A little,Some,Yes,Some,A little
+21021428,Yes,Somewhat disagree,A lot,A little,A lot,Not at all,Not at all,A lot,Yes,A lot,A little
+21021534,Yes,Strongly disagree,A lot,Some,Some,Some,Not at all,A lot,Yes,A lot,A little
+21021651,Yes,Somewhat disagree,Some,Some,Some,Some,Some,Some,Yes,A lot,A little
+21021834,Yes,Somewhat agree,A lot,A little,A lot,Some,Not at all,A lot,Yes,A lot,Not at all
+21021991,Yes,Strongly disagree,A little,A little,Not at all,A little,A little,A little,Yes,Some,Not at all
+21022107,Yes,Somewhat disagree,A lot,Some,A lot,A lot,Some,A lot,Yes,A lot,A little
+21022385,Yes,Strongly disagree,Some,Some,Some,Some,Some,Some,Yes,Some,A little
+21022549,Yes,Somewhat agree,A lot,Some,Some,Some,A little,A lot,Yes,Some,A little
+21022644,Yes,Strongly agree,Some,Some,Some,Some,Some,Some,No,Some,A little
+21022686,Yes,Somewhat agree,Some,Some,A lot,Some,Not at all,A lot,Yes,Some,Not at all
+21022779,Yes,Somewhat disagree,Some,A little,A little,Not at all,Not at all,Some,Yes,Some,A little
+21022963,Yes,Somewhat agree,A lot,Some,A lot,Some,A little,A lot,Yes,A lot,A little
+21023029,Yes,Somewhat disagree,A little,Some,A little,Some,Not at all,Some,Yes,A lot,A little
+21023116,Yes,Somewhat agree,A little,A little,Not at all,Not at all,Not at all,A little,Yes,A little,A little
+21023465,Yes,Somewhat disagree,Some,Some,Some,Some,Some,A lot,Yes,Some,A little
+21023490,Yes,Somewhat disagree,Some,Some,Some,A little,A little,Some,Yes,A little,A little
+21023578,Yes,Strongly disagree,A lot,Some,A lot,A little,Not at all,A lot,Yes,Some,A little
+21023737,Yes,Somewhat agree,Some,A little,A little,Some,Some,A little,Yes,Some,Not at all
+21023826,Yes,Strongly agree,Some,Some,Not at all,Some,Some,Not at all,No,A lot,A little
+21023862,Yes,Somewhat disagree,Some,A little,A lot,Not at all,Not at all,Some,Yes,A lot,A little
+21024175,Yes,Somewhat disagree,A lot,A little,Some,Some,Not at all,A lot,Yes,Some,A little
+21024183,Yes,Strongly agree,Some,A little,A little,A little,Not at all,A lot,Yes,Some,Not at all
+21024370,Yes,Strongly disagree,Some,A little,Some,Some,Some,Some,Yes,A lot,A little
+21024398,Yes,Strongly disagree,Some,A little,Some,Some,Not at all,A lot,Yes,A lot,Not at all
+21024643,Yes,Somewhat agree,Some,A little,Some,A little,Not at all,A lot,Yes,Some,A little
+21024780,Yes,Somewhat agree,A little,A little,Not at all,Not at all,Not at all,A little,Yes,Some,A little
+21024858,Yes,Somewhat disagree,A lot,Some,A lot,A little,A little,A lot,Yes,Some,A little
+21024937,Yes,Somewhat agree,Some,A little,A little,A little,Not at all,A lot,Yes,I do not use social media,A little
+21024938,Yes,Somewhat agree,A little,Not at all,A little,Not at all,Not at all,Some,Yes,A lot,A little
+21025040,Yes,Strongly disagree,Not at all,A little,Not at all,A little,Not at all,A lot,Yes,Some,A little
+21025255,Yes,Somewhat disagree,Some,A little,A little,A little,Not at all,Some,Yes,A lot,A little
+21025361,Yes,Strongly disagree,A little,Not at all,A little,A little,Not at all,A little,Yes,None,Not at all
+21025412,Yes,Strongly agree,A lot,Some,A lot,Some,A little,A lot,Yes,I do not use social media,A little
+21025525,Yes,Strongly disagree,A lot,A little,Some,Not at all,Not at all,A lot,Yes,Some,A little
+21025751,Yes,Strongly disagree,Some,Some,Not at all,A little,A little,A lot,Yes,I do not use social media,A little
+21025771,Yes,Strongly disagree,A lot,Some,Some,Some,Not at all,A lot,Yes,I do not use social media,A little
+21025777,Yes,Somewhat agree,Some,Some,Some,Some,Some,Some,No,I do not use social media,A little
+21025829,Yes,Somewhat disagree,A lot,Some,Some,A little,A little,A lot,Yes,A lot,A little
+21026102,Yes,Strongly disagree,Some,Not at all,Some,Some,Not at all,Some,Yes,Some,A little
+21026165,Yes,Somewhat disagree,A lot,Not at all,Some,Not at all,Not at all,A lot,Yes,A lot,A little
+21026434,Yes,Somewhat agree,A lot,Some,A little,Some,A little,A lot,Yes,A little,A little
+21027380,Yes,Strongly disagree,A lot,A lot,Not at all,Not at all,Not at all,Some,Yes,A lot,Not at all
+21027435,Yes,Strongly agree,Some,Some,A little,Some,Some,Some,Yes,Some,A little
+21027598,Yes,Somewhat disagree,Some,Some,Some,Some,Some,A lot,Yes,Some,A little
+21027649,Yes,Strongly agree,A lot,Some,Some,A little,Not at all,A lot,Yes,Some,A little
+21027848,Yes,Somewhat agree,Some,A little,A little,A little,A little,Some,Yes,A lot,A little
+21028125,Yes,Strongly agree,A little,A lot,Not at all,Not at all,Not at all,Not at all,Yes,A lot,Not at all
+21028176,Yes,Somewhat disagree,A lot,A lot,A lot,Some,Not at all,A lot,Yes,A lot,A little
+21028479,Yes,Somewhat agree,A lot,A little,A little,Some,Some,A lot,Yes,Some,A little
+21028818,Yes,Somewhat agree,A lot,Some,A lot,Some,Not at all,A lot,Yes,A lot,A little
+21028972,Yes,Strongly disagree,A lot,Not at all,Some,Not at all,Not at all,Some,Yes,I do not use social media,A little
+21029091,Yes,Somewhat disagree,A little,Some,Some,Some,A lot,Some,Yes,None,Not at all
+21029241,Yes,Somewhat agree,Some,A little,Some,A little,A little,A lot,Yes,Some,Not at all
+21029415,Yes,Somewhat agree,A lot,A little,Not at all,Not at all,Not at all,A lot,Yes,A lot,A little
+21029462,Yes,Somewhat disagree,Some,Some,Not at all,Not at all,Not at all,Not at all,Yes,I do not use social media,A little
+21029587,Yes,Strongly agree,A lot,Some,Some,Some,Not at all,A lot,Yes,I do not use social media,A little
+22000786,Yes,Strongly disagree,Some,A little,Some,A little,A little,Some,Yes,Some,A little
+22002568,Yes,Somewhat disagree,Some,Some,Some,A little,Not at all,Some,Yes,Some,A little
+22002932,Yes,Somewhat disagree,Some,A little,Some,Some,Some,A little,No,A lot,A little
+22003376,Yes,Somewhat agree,A little,Some,Not at all,Not at all,Not at all,A lot,Yes,A lot,Not at all
+22003403,Yes,Strongly disagree,Some,Some,Some,Some,Not at all,A lot,Yes,A lot,A little
+22003825,Yes,Strongly disagree,Some,Some,Some,Some,Some,Some,Yes,A little,A little
+22004771,Yes,Somewhat disagree,A lot,A little,A little,A little,A little,Some,Yes,Some,Not at all
+22004878,Yes,Somewhat agree,Some,Some,A little,Some,Not at all,Some,Yes,A lot,A little
+22005817,Yes,Somewhat agree,Some,Not at all,Some,Some,Not at all,Some,Yes,A lot,A little
+22006438,Yes,Strongly disagree,A lot,Some,Some,Some,A little,A lot,Yes,Some,A little
+22006818,Yes,Strongly agree,Some,A little,A little,Not at all,Not at all,Some,Yes,A lot,Not at all
+22007944,Yes,Strongly disagree,A lot,A little,A lot,Not at all,Not at all,A lot,No,Some,A little
+22008750,Yes,Strongly disagree,A lot,A little,A lot,Some,Not at all,A lot,Yes,A lot,A little
+22009412,Yes,Somewhat agree,A lot,Some,Some,Some,A little,A lot,Yes,Some,A little
+22009802,Yes,Somewhat agree,A lot,A lot,Not at all,Not at all,A little,Some,Yes,Some,Not at all
+22010713,Yes,Strongly disagree,Some,A little,Some,Some,Some,A lot,Yes,A little,A little
+22012156,Yes,Somewhat agree,A lot,A little,Some,Some,Some,A lot,Yes,Some,A little
+22012313,Yes,Strongly disagree,Some,A little,A little,A little,A little,Some,Yes,Some,A little
+22012581,Yes,Strongly disagree,Some,A little,A little,A little,A little,A lot,Yes,Some,A little
+22013324,Yes,Somewhat disagree,Some,Not at all,Some,Some,Some,A lot,Yes,Some,A little
+22013377,Yes,Somewhat disagree,Some,A little,Some,Some,A little,A lot,Yes,A little,A little
+22014932,Yes,Strongly disagree,A lot,Some,A little,A little,Not at all,A lot,Yes,A lot,A little
+22015455,Yes,Somewhat agree,Some,A little,Some,A little,Not at all,A lot,Yes,I do not use social media,Not at all
+22015891,Yes,Somewhat disagree,Some,A little,A little,A little,Some,Some,Yes,Some,A little
+22016352,Yes,Strongly disagree,A lot,Some,Some,Some,A little,A lot,Yes,A lot,A little
+22016702,Yes,Somewhat disagree,A lot,A little,Some,Some,A little,A lot,Yes,Some,A little
+22018681,Yes,Strongly agree,A lot,A little,Some,Some,Not at all,A lot,Yes,A lot,A little
+22020272,Yes,Strongly disagree,A lot,Some,Some,Some,A little,A lot,Yes,A little,A little
+22020436,Yes,Somewhat agree,A lot,A little,Some,Some,Some,A lot,Yes,A lot,A little
+22021459,Yes,Somewhat agree,A lot,A little,Some,A little,A little,A lot,Yes,A little,A little
+22021569,Yes,Somewhat agree,Not at all,Not at all,Not at all,A little,A little,Some,No,Some,Not at all
+22021943,Yes,Strongly disagree,A lot,A little,Not at all,A little,Some,Some,Yes,A lot,A little
+22023080,Yes,Somewhat agree,A little,A little,A lot,Some,Some,A lot,Yes,A little,A little
+22023221,Yes,Somewhat agree,A little,Not at all,Not at all,Not at all,Not at all,A little,Yes,A lot,Not at all
+22024238,Yes,Strongly disagree,A lot,Some,Some,A lot,Not at all,A lot,Yes,Some,A little
+22024397,Yes,Somewhat agree,A little,A little,Not at all,A little,A little,Not at all,Yes,A lot,A little
+22027445,Yes,Somewhat disagree,A lot,Some,Some,Some,Some,Some,Yes,Some,A little
+23000422,Yes,Somewhat agree,A lot,Some,A little,A little,A little,A little,Yes,A lot,A little
+23000489,Yes,Somewhat disagree,A lot,A lot,Not at all,A little,Not at all,Some,Yes,A lot,A little
+23000642,Yes,Somewhat disagree,A lot,A little,Some,A little,Not at all,Some,Yes,Some,A little
+23001029,Yes,Somewhat agree,Some,A little,Some,Some,Some,Some,Yes,A lot,A little
+23001504,Yes,Strongly agree,A little,Some,A little,A little,Not at all,A lot,Yes,A lot,A little
+23002333,Yes,Somewhat disagree,A little,Some,Not at all,Some,Some,Some,Yes,A lot,A little
+23002491,Yes,Somewhat agree,Some,Not at all,Some,Not at all,Not at all,Some,Yes,A lot,A little
+23002939,Yes,Somewhat disagree,Some,A little,Some,Not at all,Not at all,A lot,Yes,A lot,A little
+23003107,Yes,Somewhat disagree,A lot,Some,Some,Some,Not at all,A lot,Yes,A lot,A little
+23003569,Yes,Somewhat agree,Some,A little,A little,Some,A little,Some,Yes,Some,A little
+23004447,Yes,Strongly disagree,A little,Some,Not at all,Not at all,Not at all,Not at all,Yes,Some,Not at all
+23004929,Yes,Somewhat agree,A lot,A little,Not at all,A little,A little,A lot,Yes,I do not use social media,Not at all
+23004952,Yes,Strongly disagree,Some,A little,A lot,Some,Not at all,A lot,Yes,A lot,A little
+23005469,Yes,Strongly disagree,A little,Not at all,A lot,A little,Not at all,A lot,Yes,A lot,A little
+23005584,Yes,Somewhat agree,A lot,A little,Some,A lot,Some,A lot,Yes,A lot,Not at all
+23006699,Yes,Somewhat agree,Some,Not at all,Not at all,Not at all,Not at all,A lot,Yes,A lot,A little
+23006762,Yes,Somewhat agree,A lot,Some,A lot,Not at all,Not at all,Some,Yes,A lot,A little
+23006766,Yes,Somewhat disagree,A lot,Some,A little,Some,A little,A lot,Yes,A lot,A little
+23007139,Yes,Strongly disagree,A lot,A little,Some,A little,Not at all,A little,Yes,A lot,A little
+23007436,Yes,Strongly disagree,Some,A lot,A little,Some,A little,A little,No,A lot,A little
+23007573,Yes,Somewhat agree,A lot,Some,Some,Some,Some,A lot,Yes,A lot,A little
+23007724,Yes,Strongly agree,Some,A little,Some,A little,Not at all,Some,Yes,Some,A little
+23007873,Yes,Somewhat agree,Some,Some,Some,A lot,A lot,Some,Yes,A little,A little
+23008702,Yes,Somewhat agree,A lot,Some,Some,A little,A little,A little,Yes,Some,A little
+23008851,Yes,Somewhat agree,Some,Some,A lot,Some,A little,Some,Yes,Some,A little
+23008969,Yes,Somewhat agree,A little,A little,A little,A little,A little,A little,Yes,Some,A little
+23009135,Yes,Somewhat disagree,A little,Some,Some,Not at all,Not at all,A lot,Yes,Some,A little
+23009377,Yes,Somewhat disagree,A lot,A little,A little,A little,A little,A lot,Yes,A lot,A little
+23009493,Yes,Somewhat disagree,Some,Some,A little,Some,Some,Some,Yes,Some,A little
+23009735,Yes,Somewhat disagree,Some,A little,A little,A little,A little,Some,Yes,A lot,A little
+23009809,Yes,Somewhat agree,A little,A little,Some,A little,Not at all,Some,Yes,A lot,Not at all
+23009893,Yes,Somewhat disagree,Some,Not at all,A little,A little,Not at all,Some,Yes,A lot,A little
+23010479,Yes,Somewhat agree,A lot,A little,A little,Some,Not at all,A lot,No,A lot,A little
+23011233,Yes,Strongly disagree,Some,Some,Some,Some,A little,A lot,Yes,A little,A little
+23012231,Yes,Somewhat disagree,A lot,Some,A lot,Some,Not at all,A lot,Yes,Some,A little
+23012771,Yes,Strongly disagree,Some,A little,Some,Not at all,A lot,Some,No,Some,A little
+23013002,Yes,Somewhat disagree,Some,Some,Some,Some,A little,Some,Yes,A lot,A little
+23013339,Yes,Strongly disagree,Some,A little,Some,Some,A little,A lot,Yes,Some,Not at all
+23013875,Yes,Somewhat agree,Some,Some,Some,A little,A little,A little,Yes,Some,A little
+23015710,Yes,Strongly disagree,A lot,A lot,Some,Not at all,Some,A lot,Yes,Some,A little
+23016114,Yes,Somewhat disagree,A lot,Some,A little,Some,Some,Some,Yes,Some,Not at all
+23016286,Yes,Strongly agree,A lot,A little,Some,Some,Not at all,A lot,Yes,A lot,A little
+23016749,Yes,Somewhat agree,Some,Some,Not at all,A little,Not at all,Some,Yes,A lot,A little
+23016852,Yes,Strongly disagree,Some,Some,A little,A little,A little,A lot,Yes,A lot,Not at all
+23016952,Yes,Strongly agree,Some,A little,A little,Some,A little,Some,Yes,A lot,A little
+23017057,Yes,Somewhat disagree,A lot,A little,A little,A little,A little,Some,Yes,A lot,A little
+23017648,Yes,Strongly disagree,A lot,Some,Not at all,A little,A little,A lot,Yes,A little,A little
+23017934,Yes,Somewhat agree,A lot,Some,Some,Some,A little,A lot,Yes,A little,A little
+23018186,Yes,Strongly disagree,A lot,A little,Some,A little,Some,A little,Yes,A little,Not at all
+23018297,Yes,Somewhat agree,Some,A little,A lot,Some,Not at all,A lot,Yes,A lot,A little
+23018810,Yes,Somewhat disagree,Some,A little,A little,A little,Not at all,A lot,Yes,A lot,A little
+23019150,Yes,Strongly agree,Some,Some,Some,Some,Some,Some,Yes,A lot,A little
+23019507,Yes,Somewhat disagree,A lot,A little,Some,A little,A little,Some,Yes,Some,A little
+23020124,Yes,Strongly agree,Not at all,Some,Not at all,Not at all,Not at all,Not at all,Yes,A lot,Not at all
+23020401,Yes,Somewhat agree,A little,Some,Some,Some,A little,Some,Yes,I do not use social media,A little
+23021654,Yes,Somewhat agree,Some,Some,A little,A little,A little,Some,Yes,Some,Not at all
+23022349,Yes,Strongly disagree,Some,Some,Some,Some,Not at all,Some,Yes,Some,Not at all
+23022729,Yes,Strongly disagree,A lot,Some,A lot,Some,Not at all,A lot,Yes,A lot,A little
+23023074,Yes,Somewhat disagree,A lot,Some,Some,Some,A little,A lot,Yes,A lot,A little
+23023888,Yes,Somewhat agree,Some,A little,Some,Some,Not at all,A lot,Yes,A lot,A little
+23024455,Yes,Somewhat disagree,A lot,Some,A lot,A lot,Not at all,A lot,Yes,A lot,A little
+23024545,Yes,Strongly disagree,A little,A little,A little,A little,A little,A lot,Yes,Some,A little
+23024645,Yes,Somewhat disagree,Some,Some,Some,Some,Not at all,Some,Yes,Some,A little
+23025064,Yes,Somewhat disagree,A little,Some,Not at all,Not at all,Not at all,Not at all,Yes,Some,Not at all
+23026195,Yes,Strongly disagree,A lot,A lot,Some,Some,Not at all,A lot,Yes,Some,A little
+23026388,Yes,Somewhat agree,A lot,Some,Some,Some,Some,A lot,Yes,A lot,A little
+23026615,Yes,Strongly disagree,A lot,Some,Not at all,Some,Not at all,Some,Yes,Some,A little
+23026727,Yes,Strongly agree,A lot,A little,Some,A little,Not at all,A lot,Yes,A lot,A little
+23026815,Yes,Strongly disagree,A little,Some,Some,Some,Not at all,A lot,Yes,I do not use social media,Not at all
+23027039,Yes,Somewhat disagree,A lot,Some,Some,A little,Not at all,A lot,Yes,A lot,A little
+23027161,Yes,Somewhat disagree,Some,A little,A lot,A little,Not at all,A lot,Yes,A lot,Not at all
+23027342,Yes,Strongly disagree,A lot,A lot,A little,Not at all,Not at all,Some,Yes,A lot,A little
+23027347,Yes,Strongly agree,A lot,Some,Some,A lot,Some,A little,Yes,A lot,A little
+23027442,Yes,Somewhat disagree,A lot,A lot,Some,Some,A lot,Some,Yes,Some,A little
+23028330,Yes,Somewhat disagree,A lot,Some,A lot,Some,A little,A lot,Yes,Some,A little
+23028566,Yes,Strongly disagree,Some,A little,Not at all,Not at all,Not at all,A little,Yes,A lot,A little
+23028568,Yes,Strongly disagree,A lot,Some,Some,Some,Some,A lot,Yes,Some,A little
+23029137,Yes,Somewhat agree,Some,Not at all,Some,Not at all,Not at all,A lot,Yes,A lot,A little
+23029210,Yes,Strongly agree,A little,Not at all,Not at all,Not at all,A lot,A little,Yes,None,Not at all
+24002161,Yes,Somewhat agree,Some,Some,Some,Some,A little,Some,Yes,A little,A little
+24003140,Yes,Strongly disagree,Some,Some,Some,A little,A little,Some,Yes,Some,A little
+24003758,Yes,Strongly disagree,Some,Not at all,A little,Not at all,Not at all,A lot,Yes,A lot,A little
+24006626,Yes,Somewhat agree,A lot,Some,Some,A little,A little,Some,Yes,A lot,A little
+24008110,Yes,Somewhat disagree,Some,Not at all,A lot,Some,Not at all,A lot,Yes,A lot,Not at all
+24008402,Yes,Somewhat agree,Some,A little,A little,Some,Not at all,A lot,Yes,Some,A little
+24008975,Yes,Strongly agree,Some,Some,Some,Some,Not at all,A lot,Yes,A lot,Not at all
+24010612,Yes,Somewhat agree,A little,Some,A little,A little,A little,A little,Yes,A lot,A little
+24011238,Yes,Somewhat disagree,A lot,A little,A lot,Some,A little,A lot,Yes,A lot,A little
+24011663,Yes,Somewhat agree,A lot,A little,A lot,A lot,A little,A lot,Yes,Some,A little
+24012045,Yes,Somewhat disagree,A lot,Some,A lot,Some,A little,A lot,Yes,A lot,A little
+24013473,Yes,Somewhat agree,Some,Some,Some,Some,Some,Some,Yes,A little,Not at all
+24013582,Yes,Somewhat agree,A little,A lot,Some,A little,A little,Not at all,Yes,I do not use social media,A little
+24020633,Yes,Somewhat disagree,A lot,A little,Some,Some,A little,Some,Yes,Some,Not at all
+24023749,Yes,Somewhat agree,A lot,Some,A lot,Some,A little,A lot,No,A little,A little
+24027003,Yes,Strongly disagree,A lot,A little,Some,Some,Not at all,Some,Yes,Some,A little
+24028917,Yes,Somewhat disagree,A lot,A little,A lot,Some,Some,A lot,Yes,A lot,Not at all

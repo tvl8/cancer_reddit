@@ -1,0 +1,28 @@
+$schema: https://azuremlschemas.azureedge.net/latest/sparkJob.schema.json
+type: spark
+experiment_name: azure-project-tutorial
+display_name: test-with-archive-and-jar
+
+jars:
+  - spark-nlp_2.12-5.0.2.jar
+
+code: ./ 
+entry:
+  file: sample-spark-nlp-job.py
+
+conf:
+  spark.executor.instances: 1
+  spark.dynamicAllocation.enabled: False
+  spark.driver.cores: 1
+  spark.driver.memory: 7g
+  spark.executor.cores: 1
+  spark.executor.memory: 7g
+
+resources:
+  instance_type: standard_e4s_v3
+  runtime_version: "3.4"
+
+environment: azureml:sparknlp-env@latest
+
+identity:
+  type: user_identity

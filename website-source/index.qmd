@@ -1,0 +1,51 @@
+# Using Reddit Pushshift to Enrich Understanding of Cancer Communication
+
+## Introduction
+
+Project Authors: Tiana Le, Sheeba Moghal, Ishaan Babbar, Liz Kovalchuk 
+
+In the digital age, where information is readily available at our fingertips, understanding how people navigate and trust health information is critical. With countless sources such as healthcare professionals, government agencies, social media, and online forums, it is essential to explore what the United States population believes about the reliability and accessibility of health information. To better understand this phenomenon, data was gathered from an online forum called Reddit. The Reddit dataset comprises textual data that offers valuable insights into the information shared online about health, particularly topics related to cancer. Using NLP methods, we can explore the most common topics and also the sentiment toward these topics. In addition to the textual data, we will also use the Health Information National Trends Survey (HINTS), which is administered by National Cancer Institute. In this survey, people were asked directly about what they think about health information. Using both the Reddit data and HINTS, we seek to understand trust, frustration, and overall sentiment relating to healthcare and cancer.  
+
+Our project explores the Pushshift Reddit Dataset to examine trust in healthcare, narrowing to r/cancer forums. While there are some assumptions that need to be made to pair our corroborating dataset, (the Health Information National Trends Survey (HINTS) survey and the Reddit PushShift dataset) we believe that we compare and use both of these datasets to investigate the following questions: 
+
+* Is public sentiment toward healthcare and cancer generally positive, or negative, in an online social platform? 
+* Is there evidence of trust (or lack thereof) when the public discusses healthcare? 
+* Is there evidence of other interpersonal conflict in healthcare discussions and emotion / sentiment analysis (e.g. sadness, disgust, surprise, joy, anger). 
+
+## Data Sources 
+
+###  The Health Information National Trends Survey (HINTS) 
+
+The Health Information National Trends Survey (HINTS) is a significant research initiative launched by the National Cancer Institute (NCI) in 2001. It aims to assess how adults in the United States access and utilize health information with a particular focus on cancer-related topics. HINTS provides a rich source of data that helps researchers understand public interactions with health information, including trends in health communication, knowledge, attitudes, and behaviors regarding cancer prevention and control.
+
+It is an excellent starting place for structured questionnaires that would be helfpul to enhance in a "more accessible" format of Reddit data. 
+
+HINTS employs a cross-sectional, nationally representative survey methodology targeting non-institutionalized adults aged 18 years and older. This design allows for the collection of data that reflects the diverse experiences and perspectives of the U.S. population. Though this survey was initially conducted biennially, HINTS has transitioned to an annual survey format.
+
+The survey seeks information on: 
+
+* Health information-seeking behaviors
+* Cancer prevention and screening practices
+* Knowledge and perceptions related to cancer risks
+* Access to healthcare services
+* Utilization of technology for health information
+* Publicly Available Data: HINTS data is freely accessible through its website, allowing researchers, policymakers, and public health professionals to utilize this information for various applications, including the design and evaluation of health communication programs
+
+### The Reddit PushShift Data Set 
+
+The Pushshift Reddit dataset is a comprehensive collection of submissions and comments from Reddit, designed to facilitate social media research by providing easy access to historical data. Launched in 2015, Pushshift has become a crucial resource for researchers interested in analyzing user-generated content on one of the largest social media platforms.
+
+The data leveraged from the Reddit dataset was from the provided repository of pre-processed data: 
+
+* Spans the June-2023 to July-2024 in the 202306-202407 directory
+* Spans Jan-2021 to March-2023 in the 202101-202303 directory
+
+The data queried is of both submissions and comments from the PushShift Dataset. 
+
+## Sources: 
+
+1. Finney Rutten, L. J., Arora, N. K., Bakken, S., & Hesse, B. W. (2022). Expanding the Health Information National Trends Survey research: A comparison of health information seeking behaviors across countries. Health Communication, 37(1), 1-10. https://doi.org/10.1080/10810730.2022.2134522
+2. National Cancer Institute. (2021). Health Information National Trends Survey (HINTS). Retrieved from https://hints.cancer.gov
+3. Kreps, G. L., & Neuhauser, L. (2020). The health information national trends survey: Research and implications for health communication. PubMed. https://pubmed.ncbi.nlm.nih.gov/33970822/
+4. Zannettou, S., Caulfield, T., & De Cristofaro, E. (2020). The Pushshift Reddit dataset. arXiv. https://doi.org/10.48550/arXiv.2001.08435
+5. Pushshift. (n.d.). Pushshift Reddit dataset. In Papers with Code. Retrieved from https://paperswithcode.com/dataset/pushshift-reddit

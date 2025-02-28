@@ -1,0 +1,19 @@
+# ML
+
+## Naive Bayes
+
+![Sentiment in Cancer and Non-Cancer Subreddits](plot-images/confusion_matrix_naive.png)
+
+# Logistic Regression
+
+![Sentiment in Cancer and Non-Cancer Subreddits](plot-images/confusion_matrix_lr.png)
+
+# Comparing Performance
+
+| Test Performance  | Naive Bayes | Logistic Regression |
+|-------------------|-------------|----------------------|
+| Accuracy          | 0.775       | 0.707                |
+| Precision         | 0.777       | 0.707                |
+| Recall            | 0.775       | 0.707                |
+| F1-Score          | 0.775       | 0.707                |
+| AUC-ROC           | 0.776       | 0.707                |

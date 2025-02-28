@@ -1,0 +1,87 @@
+---
+title: "Reddit PushShift Exloratory Data Analysis"
+format:
+  html: 
+    embed-resources: true
+---
+
+### Reddit Questions and Searches 
+
+* Entire comments and subcomments that contain the word “cancer” 
+    * (Parallel to A1, B3a, B13 in HINTS?)
+    * Calculate frequency per year
+* Reddits and subreddits that contain the word “cancer”
+
+In addition, we combed the entire Reddit PushShift dataset provided based on the following criteria: 
+
+| **Variable**                  | **Description**                                                                                                                                                                                                                                     |
+|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| FrustratingCancerSearch       | “Frustrating” or “frustrat” and “cancer” (HINTS A2b)                                                                                                                                                                                               |
+| CancerDoctorsTrust            | “Cancer” and “doctors” or “trust” (does not need to contain "trust" since trust is included in NRC sentiment analysis) (HINTS A3a)                                                                                                                |
+| CancerFamilyTrust             | “Cancer” and “family” or “friends” or various familial terms (e.g., “sister,” “brother,” “mother”) or “trust” (HINTS A3b)                                                                                                                         |
+| CancerGovHealthcarePrograms   | “Cancer” and government_healthcare_programs, such as ["Medicare," "Medicaid," "ACA," "NIH," etc.] or “trust” (HINTS A3c)                                                                                                                           |
+| CancerCharitiesTrust          | “Cancer” and cancer_charities, such as ["American Cancer Society," "LLS," "BCRF," "Livestrong," etc.] or “trust” (HINTS A3d)                                                                                                                      |
+| CancerReligiousOrgTrust       | “Cancer” and charitable_religious_organizations, such as ["Catholic Relief Services," "World Vision," "Salvation Army," etc.] or “trust” (HINTS A3e)                                                                                               |
+| CancerScientistsTrust         | “Cancer” and top_cancer_institutes, such as ["MD Anderson," "Mayo Clinic," "UCSF," "Roswell Park," etc.] or “trust” (HINTS A3f)                                                                                                                   |
+| InsuranceCancer               | “Insurance” and “cancer”                                                                                                                                                                                                                           |
+| MedicareCancer                | “Medicare” and “cancer”                                                                                                                                                                                                                            |
+| MedicaidCancer                | “Medicaid” and “cancer”   
+
+# Questions to Explore:
+
+
+The primary goal of this exploratory data analysis was to gain a comprehensive understanding of the dataset that would lay the groundwork for advanced modeling to answer our project questions. The dataset includes columns such as 'body', 'controversiality', 'created_utc', and 'subreddit'.
+
+
+The analysis in this section is focused on insights via healthcare-related subreddits. Given the diversity of subreddits, we aimed to examine how emotions vary across different communities, as each subreddit likely captures unique sentiments and experiences related to health. We analyzed keyword frequency to identify patterns to use for NLP and ML model analysis.
+
+
+The 'body' column, containing user comments, was analyzed for sentiment to classify the emotions sadness, fear, frustration, and joy across different subreddit groups. The 'created_utc' column was leveraged to study temporal trends, analyzing how sentiment and emotion change over time or vary by day of the week. By examining these aspects, we were able to answer targeted questions about user experiences, sentiment distributions, engagement patterns, and common themes discussed within each community, ultimately providing a holistic view of the dataset’s emotional landscape. Overall, using all the existing data will help inform the development of models for advanced analysis, including novel classification techniques.
+
+## Are certain subreddits more likely to express interpersonal conflict or emotional support?
+
+
+**Purpose**:
+This analysis explores which subreddits are more likely to feature discussions about interpersonal conflict or emotional support, highlighting the role of community dynamics in health-related experiences. By examining the frequency of keywords associated with conflict—such as negative emotions of frustration, struggles, and relational challenges—and support keywords that signify kindness, empathy, and encouragement, we aim to understand whether these communities approach health challenges in a unified and positive manner or show signs of division within.
+
+**Outcome**: The analysis reveals conflict and support mentions across healthcare subreddits reveals varying dynamics in community interactions. Subreddits such as nursing, AskDocs, and breastcancer exhibit high levels of both conflict and support, indicating that members frequently discuss mutual encouragement but also deal with frustrations. In contrast, when compared to other subreddits such as HealthInsurance, CrohnsDisease and cancer have relatively high support but low conflict, which suggests people are getting encouragement and unity in these subreddits.
+
+![Analysis 1](plot-images/frequency_of_conflict_support.png)
+
+## What is the average sentiment score?
+
+
+**Purpose**: The purpose of calculating the average sentiment score is to understand the general emotional tone across different subreddits. By examining the average sentiment for each subreddit, we can gain insights into whether discussions within these communities tend to be positive, negative, or neutral overall. This analysis helps identify which healthcare communities are more optimistic or challenged in their outlook, offering a broader view of the emotional landscape within each subreddit.
+
+
+**Outcome**: The sentiment analysis for healthcare subreddits from the months of June 2023- July 2024, reveals a range of emotional tones across communities. Subreddits like publichealth(0.9- June 2023), and lymphoma(0.71, January 2024) and Prostatecancer(0.55- December 2023) have positive sentiment scores, suggesting a  upportive or encouraging atmosphere among members. On the other hand, communities like Autoimmune(-0.4), thyroidcancer(-0.41) and coloncancer(-0.3) show more negative sentiment, potentially indicating challenges, frustrations, or concerns commonly shared by these users. Several subreddits, such as nursing, breastcancer and HealthInsurance exhibit scores closer to neutral, implying a balanced mix of positive and negative experiences. This on an overall scale of sentiment scores highlights the diversity of emotional climates within these healthcare communities, reflecting the unique support needs and challenges faced by each group.
+
+![Analysis 2](plot-images/avg_sentiment_score.png)
+
+
+## What are the most common words or phrases for positive versus negative comments?
+
+**Purpose**: Identifying the most common words in positive versus negative comments provides insight into the experiences and attitudes within the community. This analysis helps uncover topics, concerns, and emotions associated with each sentiment, offering a more nuanced understanding of the community's overall mood and focus.
+
+**Outcome**: The most common words within positive and negative comments, we observe and remove many stopwords that could be considered insignificant for our text analysis to see what words lead to more positive and negative comments. Words like "doctor", "first" and "feel" appear across both sentiment categories, highlighting the centrality of health experiences in these discussions. In positive comments, expressions such as "Concern," "questions," and "action" indicate explanatory language, often associated with sharing advice or encouragement. Conversely, negative comments include words like "Patient", "cancer" and "work" hinting at expressions of dissatisfaction, frustration, or challenges.
+
+![Analysis 3](plot-images/wordcloud_eda.png)
+
+
+## What are the most common expressions of gratitude, frustration, hope, fear, sadness or joy?
+
+
+**Purpose:**  Identifying the most common expressions of gratitude, frustration, joy, fear, sadness and hope offers valuable insight into the language used for support, shared challenges, and encouragement within healthcare communities. This analysis helps uncover how individuals convey their emotions, revealing the words and phrases that resonate most when expressing appreciation, challenges, or optimism.
+
+
+**Note**: The words are editable
+
+
+**Outcome**: In our analysis, we determined that gratitude is the most frequent emotion among the three categories, with over 1750+ mentions. Hope is a close second with around 1300 mentions. This suggests that individuals within these healthcare communities often express optimism or a desire for positive outcomes. Expressions of joy, with over 250 mentions, indicate  happiness for support and shared experiences. Fear, sadness and frustration are mentioned less frequently than the other emotions with around 250 mentions at maximum, signaling that while there are challenges, they may be less dominant in the discourse compared to hopeful or thankful sentiments. This analysis uses keywords like "thank you", "afraid", and "sad", to help highlight the tone within these communities.
+
+
+![Analysis 4](plot-images/frequency_expressions_emotions.png)
+
+
+# Further Directions and Conclusion
+In our Reddit EDA focus, the analysis provided valuable insights into community interactions within health-care related subreddits. By examining aspects such as average sentiment scores, emotional frequency, and mentions of conflict and support, we uncovered distinct emotional patterns across the subreddits. These findings help establish a strong foundation for advanced modeling using NLP and ML models techniques, which can allow for deeper sentiment analysis and enhanced understanding of dynamics in cancer-related communities.
